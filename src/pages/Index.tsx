@@ -19,26 +19,16 @@ const Index = () => {
           {/* No dark overlay div */}
         </div>
 
-        {/* Content container for logo, title, description, and button */}
+        {/* Content container for logo and button */}
         <div className="relative z-10 flex flex-col items-center justify-center space-y-6 py-12 px-4 md:px-8">
           {/* Linda with Wings Logo - positioned over the background */}
           <img
             src="/images/linda-with-wings-logo.png" // New image path for the hero logo
             alt="Linda with Wings Logo"
-            className="h-64 md:h-80 lg:h-96 w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size
+            className="h-80 md:h-[400px] lg:h-[500px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size
           />
 
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-6xl font-serif font-bold leading-tight text-white drop-shadow-lg animate-fade-in-up delay-100">
-            Linda's Language of Colour
-          </h1>
-
-          {/* Description */}
-          <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-white drop-shadow-md animate-fade-in-up delay-200">
-            Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
-          </p>
-
-          {/* The button is positioned below the new logo and text */}
+          {/* The button is positioned below the new logo */}
           <Button
             size="lg"
             asChild // Use asChild to render Link component
@@ -100,7 +90,7 @@ const Index = () => {
           <div className="md:w-1/2 flex justify-center">
             <img
               src="/images/linda.jpeg"
-              alt="Hands holding a seedling"
+              alt="Linda Beckers"
               className="w-full max-w-md h-auto object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105" // Added hover:scale-105
             />
           </div>
