@@ -25,7 +25,7 @@ const Index = () => {
           <img
             src="/images/linda-with-wings-logo.png" // New image path for the hero logo
             alt="Linda with Wings Logo"
-            className="h-80 md:h-[400px] lg:h-[500px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size
+            className="h-[400px] md:h-[550px] lg:h-[700px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size further
           />
 
           {/* The button is positioned below the new logo */}
@@ -90,7 +90,7 @@ const Index = () => {
           <div className="md:w-1/2 flex justify-center">
             <img
               src="/images/linda.jpeg"
-              alt="Linda Beckers"
+              alt="Hands holding a seedling"
               className="w-full max-w-md h-auto object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105" // Added hover:scale-105
             />
           </div>
