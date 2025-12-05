@@ -19,22 +19,31 @@ const Index = () => {
           {/* No dark overlay div */}
         </div>
 
-        {/* Linda with Wings Logo - positioned over the background */}
-        <img
-          src="/images/linda-with-wings-logo.png" // New image path for the hero logo
-          alt="Linda with Wings Logo"
-          className="relative z-10 h-48 md:h-64 lg:h-80 w-auto object-contain mb-8 animate-fade-in-up drop-shadow-lg" // Adjust size, add margin, and shadow
-        />
+        {/* Content container for logo, title, description, and button */}
+        <div className="relative z-10 flex flex-col items-center justify-center space-y-6 py-12 px-4 md:px-8">
+          {/* Linda with Wings Logo - positioned over the background */}
+          <img
+            src="/images/linda-with-wings-logo.png" // New image path for the hero logo
+            alt="Linda with Wings Logo"
+            className="h-64 md:h-80 lg:h-96 w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size
+          />
 
-        {/* The text block (now just the button) is positioned below the new logo */}
-        <div className="relative z-10 w-full text-white py-12 px-4 md:px-8"> {/* Removed bg-gradient-to-t from-foreground/80 to-transparent */}
-          <div className="max-w-4xl mx-auto space-y-6 animate-fade-in-up"> {/* Applied fade-in-up animation */}
-            <Button
-              size="lg"
-              asChild // Use asChild to render Link component
-              className="mt-8 px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
-            ><Link to="/offerings">Explore My Offerings</Link></Button>
-          </div>
+          {/* Main Title */}
+          <h1 className="text-5xl md:text-6xl font-serif font-bold leading-tight text-white drop-shadow-lg animate-fade-in-up delay-100">
+            Linda's Language of Colour
+          </h1>
+
+          {/* Description */}
+          <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-white drop-shadow-md animate-fade-in-up delay-200">
+            Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
+          </p>
+
+          {/* The button is positioned below the new logo and text */}
+          <Button
+            size="lg"
+            asChild // Use asChild to render Link component
+            className="px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 animate-fade-in-up delay-300" // Added focus-visible styles
+          ><Link to="/offerings">Explore My Offerings</Link></Button>
         </div>
       </section>
 
@@ -116,7 +125,7 @@ const Index = () => {
           </p>
           <Button
             size="lg"
-            className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
+            className="px-12 py-7 text-2xl font-bold rounded-lg bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
           >
             Connect with Linda
           </Button>
