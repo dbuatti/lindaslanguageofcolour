@@ -8,32 +8,36 @@ const Index = () => {
   return (
     <div className="w-full font-sans">
       {/* Hero Section */}
-      <section
-        className="relative text-center min-h-[85vh] md:min-h-[90vh] flex flex-col items-center justify-center overflow-hidden" // Increased min-height to give more room for the logo
-      >
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-background.png')" }}
-        >
-          {/* No dark overlay div */}
-        </div>
+      <section className="relative w-full overflow-hidden">
+        {/* Aspect ratio container for background and logo */}
+        {/* Assuming a 16:9 aspect ratio (height is 56.25% of width). Adjust pt-[...] if images have a different aspect ratio. */}
+        <div className="relative pt-[56.25%]"> 
+          {/* Background Image */}
+          <img
+            src="/images/hero-background.png"
+            alt="Hero Background"
+            className="absolute inset-0 w-full h-full object-cover" // Fills the container, potentially cropping
+          />
 
-        {/* Content container for logo and button */}
-        <div className="relative z-10 flex flex-col items-center justify-center space-y-6 py-8 px-4 md:px-8">
-          {/* Linda with Wings Logo - positioned over the background */}
+          {/* Linda with Wings Logo - positioned over the background, scaled to be bigger */}
           <img
             src="/images/linda-with-wings-logo.png"
             alt="Linda with Wings Logo"
-            className="h-[800px] md:h-[900px] lg:h-[1000px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Significantly increased logo height
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                       w-full h-full object-contain scale-125 md:scale-150 lg:scale-175 
+                       animate-fade-in-up drop-shadow-lg" // Centered, scaled up, object-contain to prevent cropping the logo itself
           />
 
-          {/* The button is positioned below the new logo */}
-          <Button
-            size="lg"
-            asChild // Use asChild to render Link component
-            className="px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 animate-fade-in-up delay-300"
-          ><Link to="/offerings">Explore My Offerings</Link></Button>
+          {/* The button is positioned absolutely at the bottom of the hero section */}
+          <div className="absolute bottom-8 left-0 right-0 flex justify-center px-4 md:px-8 animate-fade-in-up delay-300">
+            <Button
+              size="lg"
+              asChild
+              className="px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            >
+              <Link to="/offerings">Explore My Offerings</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -115,7 +119,7 @@ const Index = () => {
           </p>
           <Button
             size="lg"
-            className="px-12 py-7 text-2xl font-bold rounded-lg bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
+            className="px-12 py-7 text-2xl font-bold rounded-lg bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             Connect with Linda
           </Button>
