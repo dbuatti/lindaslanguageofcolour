@@ -14,7 +14,7 @@ const Index = () => {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center" // Simplified background styling
-          style={{ backgroundImage: "url('/images/header-banner.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero-background.jpg')" }} // Updated to new background image
         >
           {/* Removed the dark overlay div */}
         </div>
