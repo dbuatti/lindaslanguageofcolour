@@ -8,7 +8,7 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative h-[80vh] flex items-end justify-center text-center bg-cover bg-center" // Align content to the bottom
+        className="relative flex items-end justify-center text-center bg-no-repeat bg-center bg-contain sm:bg-cover h-auto sm:h-[80vh]" // h-auto for mobile, h-[80vh] for larger; bg-contain for mobile, bg-cover for larger
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
         {/* Removed the gradient overlay as the text block will have a solid background */}
