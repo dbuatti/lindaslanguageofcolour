@@ -10,6 +10,8 @@ import SiteFooter from "./components/SiteFooter";
 import Offerings from "./pages/Offerings"; // Import Offerings page
 import About from "./pages/About"; // Import About page
 import Contact from "./pages/Contact"; // Import Contact page
+import PrivacyPolicy from "./pages/PrivacyPolicy"; // Import PrivacyPolicy page
+import TermsOfService from "./pages/TermsOfService"; // Import TermsOfService page
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
               <Route path="/offerings" element={<Offerings />} /> {/* New route */}
               <Route path="/about" element={<About />} /> {/* New route */}
               <Route path="/contact" element={<Contact />} /> {/* New route */}
+              <Route path="/privacy" element={<PrivacyPolicy />} /> {/* New route */}
+              <Route path="/terms" element={<TermsOfService />} /> {/* New route */}
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
