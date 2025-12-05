@@ -41,7 +41,7 @@ const Index = () => {
               <li>Crystal Healing</li>
               <li>Meditation</li>
               <li>Reiki (including Level Two attunements)</li>
-              <li>Intuitive Readings (Tarot, Channeling, Remote/Online)</li>
+              <li>Intuitive Readings (Tarot, Channelling, Remote/Online)</li>
             </ul>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Index = () => {
         <div className="p-6 bg-background rounded-lg"> {/* Replaced Card with div, removed shadow/hover */}
           <h3 className="text-2xl font-semibold text-primary mb-4">Energy Management & Protection</h3>
           <div className="space-y-3 text-foreground">
-            <p>Linda emphasizes the importance of daily spiritual protection and energy management:</p>
+            <p>Linda emphasises the importance of daily spiritual protection and energy management:</p>
             <ul className="list-disc list-inside space-y-1">
               <li>Essential daily protection practices.</li>
               <li>Using tools like salt across doorways.</li>
