@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"; // Card components are still imported for other potential uses, but not used in the refactored section.
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
@@ -33,11 +33,9 @@ const Index = () => {
       <Separator className="my-8" />
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <Card className="shadow-md hover:shadow-lg transition-shadow duration-300">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold text-primary">Core Services & Modalities</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3 text-gray-700">
+        <div className="p-6 bg-background rounded-lg"> {/* Replaced Card with div, removed shadow/hover */}
+          <h3 className="text-2xl font-semibold text-primary mb-4">Core Services & Modalities</h3>
+          <div className="space-y-3 text-foreground">
             <ul className="list-disc list-inside space-y-1">
               <li>Aura-Soma Colour Therapy</li>
               <li>Crystal Healing</li>
@@ -45,14 +43,12 @@ const Index = () => {
               <li>Reiki (including Level Two attunements)</li>
               <li>Intuitive Readings (Tarot, Channeling, Remote/Online)</li>
             </ul>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
-        <Card className="shadow-md hover:shadow-lg transition-shadow duration-300">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold text-primary">Energy Management & Protection</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3 text-gray-700">
+        <div className="p-6 bg-background rounded-lg"> {/* Replaced Card with div, removed shadow/hover */}
+          <h3 className="text-2xl font-semibold text-primary mb-4">Energy Management & Protection</h3>
+          <div className="space-y-3 text-foreground">
             <p>Linda emphasizes the importance of daily spiritual protection and energy management:</p>
             <ul className="list-disc list-inside space-y-1">
               <li>Essential daily protection practices.</li>
@@ -61,22 +57,20 @@ const Index = () => {
               <li>Connecting to the earth to transform negativity.</li>
               <li>Awareness of personal aura and external energy influences.</li>
             </ul>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
-        <Card className="shadow-md hover:shadow-lg transition-shadow duration-300">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold text-primary">Teaching & Mentorship</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3 text-gray-700">
+        <div className="p-6 bg-background rounded-lg"> {/* Replaced Card with div, removed shadow/hover */}
+          <h3 className="text-2xl font-semibold text-primary mb-4">Teaching & Mentorship</h3>
+          <div className="space-y-3 text-foreground">
             <p>Linda is dedicated to guiding aspiring practitioners:</p>
             <ul className="list-disc list-inside space-y-1">
               <li>Teaching "first steps" and nudging individuals onto their suitable path.</li>
               <li>Offering sessions for beginners in spiritual development.</li>
               <li>Providing practical advice on business and professional boundaries.</li>
             </ul>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </section>
 
       <Separator className="my-8" />
