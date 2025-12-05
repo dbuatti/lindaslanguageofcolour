@@ -4,37 +4,38 @@
 
 @layer base {
   :root {
-    /* DARK THEME COLORS (now default) */
-    --background: 218 68% 15%; /* Deep Cosmic Blue */
-    --foreground: 0 0% 100%; /* Pure White */
+    /* Modern, Bold Colour Scheme (Single Theme) */
+    --background: 210 30% 15%; /* A deep, rich blue for main backgrounds */
+    --foreground: 0 0% 100%; /* Pure White for text on dark backgrounds */
 
-    --card: 218 68% 20%; /* Slightly lighter deep blue for cards */
+    --card: 210 30% 20%; /* Slightly lighter deep blue for cards/sections */
     --card-foreground: 0 0% 100%;
 
-    --popover: 218 68% 20%;
+    --popover: 210 30% 20%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 200 78% 60%; /* Bright Sky Blue */
-    --primary-foreground: 218 68% 15%; /* Deep Cosmic Blue for text on bright primary */
+    --primary: 200 70% 55%; /* A vibrant, clear blue for primary actions/highlights */
+    --primary-foreground: 210 30% 15%; /* Deep blue for text on vibrant primary */
 
-    --secondary: 210 30% 30%; /* A darker, distinct blue for secondary in dark theme */
+    --secondary: 210 20% 35%; /* A mid-tone blue for secondary elements */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 218 68% 20%;
+    --muted: 210 20% 30%;
     --muted-foreground: 0 0% 80%;
 
-    --accent: 320 80% 65%; /* Vibrant Pink / Magenta */
+    --accent: 320 80% 65%; /* Vibrant Pink / Magenta for strong accents and CTAs */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 218 68% 25%;
-    --input: 218 68% 25%;
-    --ring: 200 78% 60%; /* Bright Sky Blue */
+    --border: 210 20% 25%;
+    --input: 210 20% 25%;
+    --ring: 200 70% 55%; /* Ring color matching primary */
 
     --radius: 0.5rem;
 
+    /* Sidebar colors (keeping existing for now, but they will be influenced by the new base colors) */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -45,47 +46,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    /* LIGHT THEME COLORS (now applied when .dark class is present, effectively the 'light' theme) */
-    --background: 200 40% 90%; /* A more saturated, light sky blue for the background */
-    --foreground: 218 68% 15%; /* Deep Cosmic Blue for dark text */
-
-    --card: 0 0% 100%; /* Pure White for cards */
-    --card-foreground: 218 68% 15%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 218 68% 15%;
-
-    --primary: 200 78% 60%; /* Bright Sky Blue (vibrant) */
-    --primary-foreground: 0 0% 100%; /* Pure White */
-
-    --secondary: 210 30% 75%; /* A distinct, medium-light blue for secondary elements */
-    --secondary-foreground: 218 68% 15%; /* Deep Cosmic Blue */
-
-    --muted: 200 20% 95%;
-    --muted-foreground: 218 68% 30%;
-
-    --accent: 320 80% 65%; /* Vibrant Pink / Magenta */
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84.2% 60.2%; /* Standard red for destructive actions */
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 200 20% 90%;
-    --input: 200 20% 90%;
-    --ring: 200 78% 60%; /* Bright Sky Blue */
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  /* Removed .dark theme block as requested for a single theme */
 }
 
 @layer base {

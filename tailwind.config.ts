@@ -91,8 +91,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        sans: ['Montserrat', 'sans-serif'],
+        serif: ['Oswald', 'serif'], // Using Oswald for a bold, modern heading style
       },
     },
   },
