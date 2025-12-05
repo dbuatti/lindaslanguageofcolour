@@ -78,7 +78,7 @@ const Index = () => {
       <section className="text-center py-8 bg-secondary text-secondary-foreground rounded-lg shadow-md">
         <h2 className="text-3xl font-bold mb-4">Curious About Your Path?</h2>
         <p className="text-lg max-w-2xl mx-auto mb-6">
-          If you're seeking clarity, healing, or simply want to understand how to navigate your spiritual journey with confidence, Linda offers practical support and genuine mentorship. It's about finding what truly resonates with *you*.
+          If you're seeking clarity, healing, or simply want to understand how to navigate your spiritual journey with confidence, Linda offers practical support and genuine mentorship. It's about finding what truly resonates with you.
         </p>
         <Button size="lg" variant="outline" className="text-secondary-foreground border-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
           Connect with Linda
