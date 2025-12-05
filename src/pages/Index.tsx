@@ -23,7 +23,7 @@ const Index = () => {
         </div>
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="/images/linda.kpegjpeg"
+            src="/images/linda.jpeg"
             alt="Linda Beckers"
             className="w-full max-w-md h-auto rounded-lg shadow-lg object-cover"
           />
