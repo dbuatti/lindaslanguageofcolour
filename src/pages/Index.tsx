@@ -3,20 +3,19 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Sparkles, Shield, BookOpen } from 'lucide-react'; // Importing icons
 
 const Index = () => {
   return (
     <div className="container mx-auto p-4 md:p-8 space-y-8 font-sans">
-      {/* "Your Practical Guide" Section - White Background (bg-card in dark theme for contrast) */}
+      {/* Introduction: The Guide (White Background in light theme, lighter deep blue in dark theme) */}
       <section className="flex flex-col md:flex-row items-center gap-8 py-12 bg-card text-card-foreground rounded-lg shadow-md">
         <div className="md:w-1/2 space-y-4 text-center md:text-left px-4">
           <h2 className="text-4xl font-bold font-serif text-foreground">Your Practical Guide to Spiritual Well-being</h2>
           <p className="text-lg">
-            At Linda's Language of Colour, Linda Beckers offers grounded spiritual guidance, practical energy management, and clear teachings for those beginning or deepening their journey. Her practice weaves together various healing and spiritual development techniques, always with a focus on real-world application.
+            At Linda's Language of Colour, Linda Beckers offers grounded spiritual guidance, drawing on deep experience and comfort. Her purpose is to **"teach those first steps and nudge people onto the path that suits"** them.
           </p>
           <p className="text-lg">
-            With a wealth of experience, Linda is dedicated to empowering individuals. As she puts it, her purpose is to "**teach those first steps** and nudge people onto the path that suits" them, providing honest advice and mentorship to help you find your footing.
+            Linda, a respected **"powerful master and channeler"**, provides the tools and advice needed to empower individuals and help them find their footing.
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center px-4">
@@ -30,43 +29,39 @@ const Index = () => {
 
       <Separator className="my-8 bg-primary/50" />
 
-      {/* 3-Column Section - Deep Cosmic Blue Background, White Text */}
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-background text-foreground p-8 rounded-lg shadow-md">
-        <div className="p-6 rounded-lg">
-          <h3 className="text-2xl font-semibold font-serif text-primary mb-4">Core Services & Modalities</h3>
-          <div className="space-y-3">
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2"><Sparkles size={18} className="text-accent" /> Aura-Soma Colour Therapy</li>
-              <li className="flex items-center gap-2"><Sparkles size={18} className="text-accent" /> Crystal Healing</li>
-              <li className="flex items-center gap-2"><Sparkles size={18} className="text-accent" /> Meditation</li>
-              <li className="flex items-center gap-2"><Sparkles size={18} className="text-accent" /> Reiki (including Level Two attunements)</li>
-              <li className="flex items-center gap-2"><Sparkles size={18} className="text-accent" /> Intuitive Readings (Tarot, Channelling, Remote/Online)</li>
-            </ul>
+      {/* Core Offerings: The Modalities (Deep Cosmic Blue Background, White Text) */}
+      <section className="bg-background text-foreground p-8 rounded-lg shadow-md space-y-10">
+        <div>
+          <h3 className="text-3xl font-semibold font-serif text-primary mb-6 text-center">Core Services & Spiritual Modalities</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-3">
+              <h4 className="text-xl font-bold text-primary">Aura-Soma Colour Therapy</h4>
+              <p>Guidance using the unique language of colour for transformation and self-discovery.</p>
+
+              <h4 className="text-xl font-bold text-primary mt-6">Intuitive Readings & Channelling</h4>
+              <p>Receiving clear, strong guidance through Tarot, channelling, and remote sessions.</p>
+            </div>
+            <div className="space-y-3">
+              <h4 className="text-xl font-bold text-primary">Reiki Healing & Attunements</h4>
+              <p>Offering both healing sessions and **Reiki training (including Level Two attunements)**.</p>
+
+              <h4 className="text-xl font-bold text-primary mt-6">Meditation & Crystal Healing</h4>
+              <p>Foundational practices for deepening spiritual development.</p>
+            </div>
           </div>
         </div>
 
-        <div className="p-6 rounded-lg">
-          <h3 className="text-2xl font-semibold font-serif text-primary mb-4">Energy Management & Protection</h3>
-          <div className="space-y-3">
-            <p>Linda emphasises the importance of daily spiritual protection and energy management:</p>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2"><Shield size={18} className="text-accent" /> Essential daily protection practices.</li>
-              <li className="flex items-center gap-2"><Shield size={18} className="text-accent" /> Using tools like salt across doorways.</li>
-              <li className="flex items-center gap-2"><Shield size={18} className="text-accent" /> Cleansing and protecting personal spaces.</li>
-              <li className="flex items-center gap-2"><Shield size={18} className="text-accent" /> Connecting to the earth to transform negativity.</li>
-              <li className="flex items-center gap-2"><Shield size={18} className="text-accent" /> Awareness of personal aura and external energy influences.</li>
-            </ul>
-          </div>
-        </div>
+        <Separator className="bg-primary/50" />
 
-        <div className="p-6 rounded-lg">
-          <h3 className="text-2xl font-semibold font-serif text-primary mb-4">Teaching & Mentorship</h3>
-          <div className="space-y-3">
-            <p>Linda is dedicated to guiding aspiring practitioners:</p>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2"><BookOpen size={18} className="text-accent" /> Teaching "first steps" and nudging individuals onto their suitable path.</li>
-              <li className="flex items-center gap-2"><BookOpen size={18} className="text-accent" /> Offering sessions for beginners in spiritual development.</li>
-              <li className="flex items-center gap-2"><BookOpen size={18} className="text-accent" /> Providing practical advice on business and professional boundaries.</li>
+        <div>
+          <h3 className="text-3xl font-semibold font-serif text-primary mb-6 text-center">Energy Management & Protection</h3>
+          <div className="space-y-4">
+            <p className="text-lg">Linda emphasises that **"Protection is something that you have to do everyday if you’re working in spirituality"**.</p>
+            <ul className="list-disc list-inside space-y-2 pl-4">
+              <li>**Essential Daily Protection:** Learn practical techniques for clearing and protecting yourself and your space.</li>
+              <li>**Grounded Boundaries:** Advice on **standing firm in your boundaries** while approaching situations with compassion.</li>
+              <li>**Specific Tools:** Guidance on using practical tools like **salt across doorways** and energetic methods for pulling your aura in.</li>
+              <li>**Connecting to Earth:** Instruction on transforming negative energy by connecting to the mother (Earth) in your garden.</li>
             </ul>
           </div>
         </div>
@@ -74,11 +69,11 @@ const Index = () => {
 
       <Separator className="my-8 bg-primary/50" />
 
-      {/* Final Call-to-Action (CTA) - Dark Blue Container with Pink Glow, Pink Button */}
+      {/* Call to Action (CTA) Footer - Dark Blue Container with Pink Glow, Pink Button */}
       <section className="text-center py-12 bg-secondary text-secondary-foreground rounded-lg shadow-lg border border-transparent ring-2 ring-accent ring-offset-2 ring-offset-background transition-all duration-300 hover:ring-4">
-        <h2 className="text-3xl font-bold font-serif mb-4">Curious About Your Path?</h2>
+        <h2 className="text-3xl font-bold font-serif mb-4">Ready to Own Your Energy?</h2>
         <p className="text-lg max-w-2xl mx-auto mb-6">
-          If you're seeking clarity, healing, or simply want to understand how to navigate your spiritual journey with confidence, Linda offers practical support and genuine mentorship. It's about finding what truly resonates with you.
+          Whether you're seeking clarity, healing, or simply wanting to understand how to navigate your spiritual journey with confidence, Linda offers practical support and genuine mentorship.
         </p>
         <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-colors duration-300">
           Connect with Linda

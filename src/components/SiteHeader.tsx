@@ -11,7 +11,11 @@ const SiteHeader = () => {
         className="w-full h-auto object-cover"
       />
       {/* Subtle dark blue to black gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-center justify-center">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white text-center drop-shadow-lg px-4">
+          Practical Protection. Powerful Guidance. Profound Healing.
+        </h1>
+      </div>
     </header>
   );
 };
