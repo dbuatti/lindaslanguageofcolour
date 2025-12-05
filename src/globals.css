@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 200 25% 96%; /* A subtle, airy light blue from the header image's clouds */
+    --background: 200 40% 90%; /* A more saturated, light sky blue for the background */
     --foreground: 218 68% 15%; /* Deep Cosmic Blue for dark text */
 
     --card: 0 0% 100%; /* Pure White for cards */
@@ -13,10 +13,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 218 68% 15%;
 
-    --primary: 200 78% 60%; /* Bright Sky Blue */
+    --primary: 200 78% 60%; /* Bright Sky Blue (vibrant) */
     --primary-foreground: 0 0% 100%; /* Pure White */
 
-    --secondary: 200 20% 90%; /* A slightly darker light blue for secondary elements */
+    --secondary: 210 30% 75%; /* A distinct, medium-light blue for secondary elements */
     --secondary-foreground: 218 68% 15%; /* Deep Cosmic Blue */
 
     --muted: 200 20% 95%;
@@ -57,7 +57,7 @@
     --primary: 200 78% 60%; /* Bright Sky Blue */
     --primary-foreground: 218 68% 15%; /* Deep Cosmic Blue for text on bright primary */
 
-    --secondary: 218 68% 25%; /* Another shade of deep blue */
+    --secondary: 210 30% 30%; /* A darker, distinct blue for secondary in dark theme */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 218 68% 20%;
