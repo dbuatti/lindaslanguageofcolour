@@ -4,43 +4,43 @@
 
 @layer base {
   :root {
-    /* New Modern, Elegant Colour Scheme (Single Theme) */
-    --background: 30 10% 97%; /* Warm off-white (#FAF9F6) */
-    --foreground: 210 10% 17%; /* Charcoal (#2C2C2C) for text */
+    /* New Colour Scheme Aligned with Header Banner */
+    --background: 210 20% 97%; /* Very light, ethereal blue-white */
+    --foreground: 210 40% 15%; /* Deep Cosmic Blue for text */
 
     --card: 0 0% 100%; /* Pure White for cards/sections */
-    --card-foreground: 210 10% 17%;
+    --card-foreground: 210 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 10% 17%;
+    --popover-foreground: 210 40% 15%;
 
-    --primary: 120 15% 75%; /* Soft sage green (#B4C7B4) */
-    --primary-foreground: 210 10% 17%; /* Charcoal for text on primary */
+    --primary: 200 70% 50%; /* Vibrant Sky Blue for primary actions/highlights */
+    --primary-foreground: 0 0% 100%; /* Pure White */
 
-    --secondary: 270 15% 85%; /* Muted lavender (#C8B8DB) */
-    --secondary-foreground: 210 10% 17%; /* Charcoal for text on secondary */
+    --secondary: 210 30% 70%; /* A softer, medium blue for secondary elements */
+    --secondary-foreground: 210 40% 15%; /* Deep Cosmic Blue */
 
-    --muted: 30 10% 90%; /* Lighter muted tone */
-    --muted-foreground: 210 10% 40%; /* Darker muted text */
+    --muted: 210 20% 90%; /* Lighter muted tone */
+    --muted-foreground: 210 40% 40%; /* Darker muted text */
 
-    --accent: 38 60% 65%; /* Warm gold/bronze (#D4AF7A) */
-    --accent-foreground: 0 0% 100%; /* Pure White */
+    --accent: 240 50% 85%; /* Soft, ethereal light blue/purple for subtle glow/accent */
+    --accent-foreground: 210 40% 15%; /* Deep Cosmic Blue for text on accent */
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 10% 85%; /* Soft border */
-    --input: 30 10% 85%;
-    --ring: 120 15% 75%; /* Ring color matching primary (soft sage) */
+    --border: 210 20% 85%; /* Soft border */
+    --input: 210 20% 85%;
+    --ring: 200 70% 50%; /* Ring color matching primary */
 
     --radius: 0.5rem;
 
-    /* Custom color variables for direct use */
-    --warm-off-white: 30 10% 97%;
-    --charcoal: 210 10% 17%;
-    --soft-sage: 120 15% 75%;
-    --muted-lavender: 270 15% 85%;
-    --warm-gold: 38 60% 65%;
+    /* Custom color variables for direct use (updated to new palette) */
+    --warm-off-white: 210 20% 97%; /* Now maps to background */
+    --charcoal: 210 40% 15%; /* Now maps to foreground */
+    --soft-sage: 210 30% 70%; /* Now maps to secondary */
+    --muted-lavender: 210 30% 80%; /* A slightly lighter secondary */
+    --warm-gold: 240 50% 85%; /* Now maps to accent */
 
     /* Sidebar colors (keeping existing for now, but they will be influenced by the new base colors) */
     --sidebar-background: 240 5.9% 10%;
@@ -52,8 +52,6 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  /* Removed .dark theme block as requested for a single theme */
 }
 
 @layer base {
