@@ -4,47 +4,7 @@
 
 @layer base {
   :root {
-    --background: 200 40% 90%; /* A more saturated, light sky blue for the background */
-    --foreground: 218 68% 15%; /* Deep Cosmic Blue for dark text */
-
-    --card: 0 0% 100%; /* Pure White for cards */
-    --card-foreground: 218 68% 15%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 218 68% 15%;
-
-    --primary: 200 78% 60%; /* Bright Sky Blue (vibrant) */
-    --primary-foreground: 0 0% 100%; /* Pure White */
-
-    --secondary: 210 30% 75%; /* A distinct, medium-light blue for secondary elements */
-    --secondary-foreground: 218 68% 15%; /* Deep Cosmic Blue */
-
-    --muted: 200 20% 95%;
-    --muted-foreground: 218 68% 30%;
-
-    --accent: 320 80% 65%; /* Vibrant Pink / Magenta */
-    --accent-foreground: 0 0% 100%; /* Pure White */
-
-    --destructive: 0 84.2% 60.2%; /* Standard red for destructive actions */
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 200 20% 90%;
-    --input: 200 20% 90%;
-    --ring: 200 78% 60%; /* Bright Sky Blue */
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
+    /* DARK THEME COLORS (now default) */
     --background: 218 68% 15%; /* Deep Cosmic Blue */
     --foreground: 0 0% 100%; /* Pure White */
 
@@ -73,6 +33,8 @@
     --input: 218 68% 25%;
     --ring: 200 78% 60%; /* Bright Sky Blue */
 
+    --radius: 0.5rem;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -80,6 +42,48 @@
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* LIGHT THEME COLORS (now applied when .dark class is present, effectively the 'light' theme) */
+    --background: 200 40% 90%; /* A more saturated, light sky blue for the background */
+    --foreground: 218 68% 15%; /* Deep Cosmic Blue for dark text */
+
+    --card: 0 0% 100%; /* Pure White for cards */
+    --card-foreground: 218 68% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 68% 15%;
+
+    --primary: 200 78% 60%; /* Bright Sky Blue (vibrant) */
+    --primary-foreground: 0 0% 100%; /* Pure White */
+
+    --secondary: 210 30% 75%; /* A distinct, medium-light blue for secondary elements */
+    --secondary-foreground: 218 68% 15%; /* Deep Cosmic Blue */
+
+    --muted: 200 20% 95%;
+    --muted-foreground: 218 68% 30%;
+
+    --accent: 320 80% 65%; /* Vibrant Pink / Magenta */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%; /* Standard red for destructive actions */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 200 78% 60%; /* Bright Sky Blue */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
