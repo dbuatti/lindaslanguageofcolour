@@ -8,8 +8,8 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative text-center bg-no-repeat bg-top bg-contain // bg-top for mobile, bg-contain for mobile
-                   min-h-[50vh] sm:h-[80vh] sm:bg-cover sm:bg-center" // Using min-h-[50vh] for mobile, sm:bg-cover sm:h sm:bg-center for desktop
+        className="relative flex items-end justify-center text-center bg-no-repeat bg-top bg-cover // bg-top for mobile, bg-cover for mobile
+                   min-h-[60vh] sm:h-[80vh] sm:bg-cover sm:bg-center" // Increased min-h to 60vh for mobile
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
         {/* The text block is now absolutely positioned at the bottom of the hero section */}
