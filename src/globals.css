@@ -4,10 +4,10 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* White background for light theme */
+    --background: 200 20% 98%; /* Very light, subtle blue background */
     --foreground: 220 10% 15%; /* Dark grey/blue for text */
 
-    --card: 0 0% 100%;
+    --card: 0 0% 100%; /* Keeping cards white for contrast against the light blue background */
     --card-foreground: 220 10% 15%;
 
     --popover: 0 0% 100%;
