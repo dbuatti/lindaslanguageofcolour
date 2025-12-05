@@ -8,28 +8,8 @@ import { Separator } from "@/components/ui/separator";
 const Index = () => {
   return (
     <div className="container mx-auto p-4 md:p-8 space-y-8">
-      <section
-        className="text-center py-16 md:py-24 rounded-lg shadow-lg bg-cover bg-center relative overflow-hidden"
-        style={{ backgroundImage: "url('/images/background-sky.jpeg')" }}
-      >
-        <div className="absolute inset-0 bg-black opacity-30"></div> {/* Overlay for text readability */}
-        <div className="relative z-10 text-white">
-          <img
-            src="/images/logo-wings.png"
-            alt="Linda's Language of Colour Logo"
-            className="mx-auto mb-6 w-32 h-auto drop-shadow-lg"
-          />
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
-            Linda's Language of Colour
-          </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 drop-shadow-md">
-            Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
-          </p>
-          <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary transition-colors duration-300">
-            Explore Services
-          </Button>
-        </div>
-      </section>
+      {/* The main hero section with background image, logo, title, and tagline is now handled by SiteHeader */}
+      {/* This section is removed to avoid duplication. */}
 
       <section className="flex flex-col md:flex-row items-center gap-8 py-12">
         <div className="md:w-1/2 space-y-4 text-center md:text-left">

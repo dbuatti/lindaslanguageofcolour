@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Header from "./components/Header";
+import SiteHeader from "./components/SiteHeader"; // Changed from Header
 import Footer from "./components/Footer";
 
 const queryClient = new QueryClient();
@@ -17,7 +17,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
-          <Header />
+          <SiteHeader /> {/* Replaced Header with SiteHeader */}
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
