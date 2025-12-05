@@ -41,7 +41,7 @@ const Index = () => {
               At Linda's Language of Colour, <span className="font-bold">I offer grounded spiritual guidance</span>, drawing on deep experience and comfort. My purpose is to <span className="font-bold">"teach those first steps and nudge people onto the path that suits"</span> them.
             </p>
             <p className="text-xl leading-relaxed">
-              As a respected <span className="font-bold">"powerful master and channeler"</span>, I provide the tools and advice needed to <span className="font-bold">empower individuals</span> and help them find their footing.
+              As a respected <span className="font-bold">"powerful master and channeller"</span>, I provide the tools and advice needed to <span className="font-bold">empower individuals</span> and help them find their footing.
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center">

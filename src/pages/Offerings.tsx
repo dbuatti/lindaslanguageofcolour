@@ -27,7 +27,7 @@ const offeringsData = [
   },
   {
     title: "Spiritual Development Mentorship",
-    description: "Personalized guidance to help you navigate your spiritual path and unlock your full potential.",
+    description: "Personalised guidance to help you navigate your spiritual path and unlock your full potential.",
     icon: Sparkles,
   },
   {

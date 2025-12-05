@@ -65,7 +65,7 @@ const About = () => {
             <div className="space-y-4 p-8 bg-card rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-2xl font-serif font-bold text-foreground">Spiritual Mentorship</h3>
               <p className="text-lg leading-relaxed">
-                I offer personalized mentorship to help you develop your own spiritual gifts, manage your energy, and live a more aligned life.
+                I offer personalised mentorship to help you develop your own spiritual gifts, manage your energy, and live a more aligned life.
               </p>
             </div>
           </div>

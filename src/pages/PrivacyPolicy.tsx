@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
         <h3 className="text-2xl font-serif font-bold text-foreground mt-6 mb-3">Examples of Personal Information collected:</h3>
         <ul className="list-disc list-inside space-y-2">
           <li>Device information: version of web browser, IP address, time zone, cookie information, what sites or products you view, search terms, and how you interact with the Site.</li>
-          <li>Purpose of collection: to load the Site accurately for you, and to perform analytics on Site usage to optimize our Site.</li>
+          <li>Purpose of collection: to load the Site accurately for you, and to perform analytics on Site usage to optimise our Site.</li>
           <li>Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels.</li>
         </ul>
         <h2 className="text-3xl font-serif font-bold text-foreground mt-8 mb-4">Contact Us</h2>
