@@ -8,7 +8,7 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative text-center bg-no-repeat bg-top bg-contain // Changed bg-center to bg-top for mobile
+        className="relative text-center bg-no-repeat bg-top bg-contain // bg-top for mobile, bg-contain for mobile
                    min-h-[400px] sm:bg-cover sm:h-[80vh] sm:bg-center" // min-h for mobile, sm:bg-cover sm:h sm:bg-center for desktop
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
