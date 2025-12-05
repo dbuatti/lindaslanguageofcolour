@@ -12,6 +12,7 @@ import About from "./pages/About"; // Import About page
 import Contact from "./pages/Contact"; // Import Contact page
 import PrivacyPolicy from "./pages/PrivacyPolicy"; // Import PrivacyPolicy page
 import TermsOfService from "./pages/TermsOfService"; // Import TermsOfService page
+import ScrollToTopButton from "./components/ScrollToTopButton"; // Import ScrollToTopButton
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
             </Routes>
           </main>
           <SiteFooter />
+          <ScrollToTopButton /> {/* Add the ScrollToTopButton here */}
         </div>
       </BrowserRouter>
     </TooltipProvider>
