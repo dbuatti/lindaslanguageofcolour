@@ -4,81 +4,75 @@
 
 @layer base {
   :root {
-    --background: 200 20% 98%; /* Very light, subtle blue background */
-    --foreground: 220 10% 15%; /* Dark grey/blue for text */
+    --background: 200 20% 98%; /* Very light, subtle blue background (off-white) */
+    --foreground: 218 68% 15%; /* Deep Cosmic Blue for dark text */
 
-    --card: 0 0% 100%; /* Keeping cards white for contrast against the light blue background */
-    --card-foreground: 220 10% 15%;
+    --card: 0 0% 100%; /* Pure White for cards */
+    --card-foreground: 218 68% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 10% 15%;
+    --popover-foreground: 218 68% 15%;
 
-    --primary: 210 80% 30%; /* Deep blue from the night sky */
-    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --primary: 200 78% 60%; /* Bright Sky Blue */
+    --primary-foreground: 0 0% 100%; /* Pure White */
 
-    --secondary: 200 60% 85%; /* Light, airy blue from the clouds */
-    --secondary-foreground: 220 10% 15%; /* Dark text on secondary */
+    --secondary: 200 20% 90%; /* A slightly darker light blue for secondary elements */
+    --secondary-foreground: 218 68% 15%; /* Deep Cosmic Blue */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 200 20% 95%;
+    --muted-foreground: 218 68% 30%;
 
-    --accent: 200 60% 85%; /* Using light blue for accent */
-    --accent-foreground: 220 10% 15%;
+    --accent: 320 80% 65%; /* Vibrant Pink / Magenta */
+    --accent-foreground: 0 0% 100%; /* Pure White */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%; /* Standard red for destructive actions */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 210 80% 30%; /* Ring color matching primary */
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 200 78% 60%; /* Bright Sky Blue */
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 210 80% 10%; /* Very dark blue for dark theme background */
-    --foreground: 200 60% 85%; /* Light blue for text on dark background */
+    --background: 218 68% 15%; /* Deep Cosmic Blue */
+    --foreground: 0 0% 100%; /* Pure White */
 
-    --card: 210 80% 15%; /* Slightly lighter dark blue for cards */
-    --card-foreground: 200 60% 85%;
+    --card: 218 68% 20%; /* Slightly lighter deep blue for cards */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 210 80% 15%;
-    --popover-foreground: 200 60% 85%;
+    --popover: 218 68% 20%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 210 80% 50%; /* Brighter blue for primary in dark theme */
-    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --primary: 200 78% 60%; /* Bright Sky Blue */
+    --primary-foreground: 218 68% 15%; /* Deep Cosmic Blue for text on bright primary */
 
-    --secondary: 210 80% 20%; /* Darker blue for secondary in dark theme */
-    --secondary-foreground: 200 60% 85%;
+    --secondary: 218 68% 25%; /* Another shade of deep blue */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 218 68% 20%;
+    --muted-foreground: 0 0% 80%;
 
-    --accent: 210 80% 20%;
-    --accent-foreground: 200 60% 85%;
+    --accent: 320 80% 65%; /* Vibrant Pink / Magenta */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 210 80% 50%;
+    --border: 218 68% 25%;
+    --input: 218 68% 25%;
+    --ring: 200 78% 60%; /* Bright Sky Blue */
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

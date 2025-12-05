@@ -13,11 +13,11 @@ const Index = () => {
 
       <section className="flex flex-col md:flex-row items-center gap-8 py-12">
         <div className="md:w-1/2 space-y-4 text-center md:text-left">
-          <h2 className="text-4xl font-bold text-gray-900">Your Practical Guide to Spiritual Well-being</h2>
-          <p className="text-lg text-gray-700">
+          <h2 className="text-4xl font-bold text-foreground">Your Practical Guide to Spiritual Well-being</h2>
+          <p className="text-lg text-foreground">
             At Linda's Language of Colour, Linda Beckers offers grounded spiritual guidance, practical energy management, and clear teachings for those beginning or deepening their journey. Her practice weaves together various healing and spiritual development techniques, always with a focus on real-world application.
           </p>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-foreground">
             With a wealth of experience, Linda is dedicated to empowering individuals. As she puts it, her purpose is to "teach those first steps and nudge people onto the path that suits" them, providing honest advice and mentorship to help you find your footing.
           </p>
         </div>
