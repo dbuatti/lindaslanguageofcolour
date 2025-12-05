@@ -8,12 +8,13 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative flex items-end justify-center text-center bg-no-repeat bg-center bg-contain sm:bg-cover min-h-[300px] sm:h-[80vh]" // Added min-h-[300px] for mobile visibility
+        className="relative flex items-end justify-center text-center bg-no-repeat bg-center
+                   bg-[length:100%_auto] pb-[25%] sm:bg-cover sm:pb-0 sm:h-[80vh]" // bg-[length:100%_auto] for mobile, pb-[25%] for aspect ratio, sm:bg-cover sm:pb-0 sm:h-[80vh] for larger
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
-        {/* Removed the gradient overlay as the text block will have a solid background */}
-        <div className="relative z-10 w-full bg-foreground text-white py-8 px-4 md:px-8"> {/* Solid background for text block */}
-          <div className="max-w-4xl mx-auto space-y-4"> {/* Inner container for text alignment */}
+        {/* The text block is now absolutely positioned at the bottom of the hero section */}
+        <div className="absolute bottom-0 left-0 right-0 z-10 w-full bg-foreground text-white py-8 px-4 md:px-8">
+          <div className="max-w-4xl mx-auto space-y-4">
             <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight drop-shadow-lg">
               Linda's Language of Colour
             </h1>
@@ -72,7 +73,7 @@ const Index = () => {
               <h4 className="text-2xl font-serif font-bold text-primary">Intuitive Readings & Channelling</h4>
               <p className="text-lg leading-relaxed">Receiving <span className="font-bold">clear, strong guidance</span> through Tarot and remote sessions.</p>
             </div>
-            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:hover:shadow-xl transition-shadow duration-300">
               <h4 className="text-2xl font-serif font-bold text-primary">Meditation & Crystal Healing</h4>
               <p className="text-lg leading-relaxed"><span className="font-bold">Foundational practices</span> for spiritual development.</p>
             </div>
