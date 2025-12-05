@@ -25,7 +25,7 @@ const Index = () => {
           <img
             src="/images/linda-with-wings-logo.png"
             alt="Linda with Wings Logo"
-            className="h-[500px] md:h-[150px] lg:h-[700px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased mobile height
+            className="h-[500px] md:h-[550px] lg:h-[900px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased mobile height
           />
 
           {/* The button is positioned below the new logo */}
