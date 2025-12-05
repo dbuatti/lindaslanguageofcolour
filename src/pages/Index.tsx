@@ -11,12 +11,12 @@ const Index = () => {
       <section
         className="relative text-center min-h-[70vh] flex items-end justify-center overflow-hidden" // Adjusted min-h and added flex properties
       >
-        {/* Background Image with Overlay */}
+        {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center" // Simplified background styling
           style={{ backgroundImage: "url('/images/header-banner.jpg')" }}
         >
-          <div className="absolute inset-0 bg-foreground opacity-40"></div> {/* Dark overlay for text readability */}
+          {/* Removed the dark overlay div */}
         </div>
 
         {/* The text block is now positioned relative to the section, with z-index to be above the overlay */}
