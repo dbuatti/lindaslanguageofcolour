@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    /* LIGHT THEME COLORS (now default) */
-    --background: 200 25% 96%; /* A very light, airy blue */
-    --foreground: 210 30% 15%; /* Deep, rich blue for text */
+    /* New Modern Colour Scheme (Single Theme) */
+    --background: 200 30% 98%; /* Very light, calming blue-grey */
+    --foreground: 210 40% 20%; /* Deep, rich blue for text */
 
     --card: 0 0% 100%; /* Pure White for cards/sections */
-    --card-foreground: 210 30% 15%;
+    --card-foreground: 210 40% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 30% 15%;
+    --popover-foreground: 210 40% 20%;
 
-    --primary: 200 70% 55%; /* A vibrant, clear blue for primary actions/highlights */
+    --primary: 190 70% 45%; /* Vibrant Teal for primary actions/highlights */
     --primary-foreground: 0 0% 100%; /* Pure White */
 
-    --secondary: 210 20% 35%; /* A mid-tone blue for secondary elements */
+    --secondary: 210 20% 60%; /* A softer blue for secondary elements */
     --secondary-foreground: 0 0% 100%; /* White text on secondary */
 
-    --muted: 210 20% 90%; /* Lighter muted tone */
-    --muted-foreground: 210 30% 30%; /* Darker muted text */
+    --muted: 200 30% 90%; /* Lighter muted tone */
+    --muted-foreground: 210 40% 40%; /* Darker muted text */
 
-    --accent: 320 80% 65%; /* Vibrant Pink / Magenta for strong accents and CTAs */
+    --accent: 10 80% 65%; /* Soft Coral/Peach for strong accents and CTAs */
     --accent-foreground: 0 0% 100%; /* Pure White */
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 80%; /* Light border */
-    --input: 210 20% 80%;
-    --ring: 200 70% 55%; /* Ring color matching primary */
+    --border: 200 30% 85%; /* Light border */
+    --input: 200 30% 85%;
+    --ring: 190 70% 45%; /* Ring color matching primary */
 
     --radius: 0.5rem;
 
@@ -46,47 +46,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    /* DARK THEME COLORS (now applied when .dark class is present) */
-    --background: 210 30% 15%; /* A deep, rich blue for main backgrounds */
-    --foreground: 0 0% 100%; /* Pure White for text on dark backgrounds */
-
-    --card: 210 30% 20%; /* Slightly lighter deep blue for cards/sections */
-    --card-foreground: 0 0% 100%;
-
-    --popover: 210 30% 20%;
-    --popover-foreground: 0 0% 100%;
-
-    --primary: 200 70% 55%; /* A vibrant, clear blue for primary actions/highlights */
-    --primary-foreground: 210 30% 15%; /* Deep blue for text on vibrant primary */
-
-    --secondary: 210 20% 35%; /* A mid-tone blue for secondary elements */
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 210 20% 30%;
-    --muted-foreground: 0 0% 80%;
-
-    --accent: 320 80% 65%; /* Vibrant Pink / Magenta for strong accents and CTAs */
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 210 20% 25%;
-    --input: 210 20% 25%;
-    --ring: 200 70% 55%; /* Ring color matching primary */
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  /* Removed .dark theme block as requested for a single theme */
 }
 
 @layer base {
