@@ -31,6 +31,27 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="flex flex-col md:flex-row items-center gap-8 py-12">
+        <div className="md:w-1/2 space-y-4 text-center md:text-left">
+          <h2 className="text-4xl font-bold text-gray-900">My Approach to Spiritual Well-being</h2>
+          <p className="text-lg text-gray-700">
+            Linda Beckers operates under the name "Linda's Language of Colour," focusing on spiritual guidance, energy management, and teaching beginners. Her practice is centered around various healing and spiritual development techniques.
+          </p>
+          <p className="text-lg text-gray-700">
+            With extensive experience, Linda is dedicated to guiding aspiring practitioners and individuals on their spiritual journey. Her purpose is to "teach those first steps and nudge people onto the path that suits" them, offering practical advice and mentorship.
+          </p>
+        </div>
+        <div className="md:w-1/2 flex justify-center">
+          <img
+            src="/public/placeholder.svg"
+            alt="Linda Beckers"
+            className="w-full max-w-md h-auto rounded-lg shadow-lg object-cover"
+          />
+        </div>
+      </section>
+
+      <Separator className="my-8" />
+
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card className="shadow-md hover:shadow-lg transition-shadow duration-300">
           <CardHeader>

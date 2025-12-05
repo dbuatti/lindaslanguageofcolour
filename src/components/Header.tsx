@@ -14,19 +14,19 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <Button variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+              <Link to="/" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors duration-300">
                 Home
-              </Button>
+              </Link>
             </li>
             <li>
-              <Button variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+              <Link to="/services" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors duration-300">
                 Services
-              </Button>
+              </Link>
             </li>
             <li>
-              <Button variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+              <Link to="/contact" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors duration-300">
                 Contact
-              </Button>
+              </Link>
             </li>
           </ul>
         </nav>
