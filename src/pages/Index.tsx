@@ -21,17 +21,7 @@ const Index = () => {
         {/* The text block is now positioned relative to the section, with z-index to be above the overlay */}
         <div className="relative z-10 w-full text-white py-12 px-4 md:px-8 bg-gradient-to-t from-charcoal/80 to-transparent"> {/* Added gradient for a softer transition */}
           <div className="max-w-4xl mx-auto space-y-6"> {/* Increased spacing */}
-            {/* Removed:
-            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight drop-shadow-lg">
-              Linda's Language of Colour
-            </h1>
-            <p className="text-xl md:text-2xl font-sans leading-relaxed drop-shadow-md">
-              Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
-            </p>
-            <p className="text-3xl md:text-4xl font-serif leading-snug drop-shadow-md">
-              Practical Protection. Powerful Guidance. Profound Healing.
-            </p>
-            */}
+            {/* Removed site title and description from here as it's now in the header */}
             <Button
               size="lg"
               className="mt-8 px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
