@@ -25,7 +25,7 @@ const Index = () => {
           <img
             src="/images/linda-with-wings-logo.png" // New image path for the hero logo
             alt="Linda with Wings Logo"
-            className="h-80 md:h-[400px] lg:h-[500px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size
+            className="h-80 md:h-[400px] lg:h-[1000px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size
           />
 
           {/* The button is positioned below the new logo */}
