@@ -28,9 +28,7 @@ const SiteHeader = () => {
         {!isMobile && (
           <nav className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
-              <Button key={link.name} variant="ghost" asChild className="text-lg font-medium text-foreground hover:text-primary">
-                <Link to={link.href}>{link.name}</Link>
-              </Button>
+              <Button key={link.name} variant="ghost" asChild className="text-lg font-medium text-foreground hover:text-primary"><Link to={link.href}>{link.name}</Link></Button>
             ))}
           </nav>
         )}
@@ -48,9 +46,7 @@ const SiteHeader = () => {
               <Logo /> {/* Using the new Logo component in mobile sheet */}
               <nav className="flex flex-col gap-4 mt-8"> {/* Added margin-top for spacing */}
                 {navLinks.map((link) => (
-                  <Button key={link.name} variant="ghost" asChild className="justify-start text-xl font-medium text-foreground hover:text-primary">
-                    <Link to={link.href}>{link.name}</Link>
-                  </Button>
+                  <Button key={link.name} variant="ghost" asChild className="justify-start text-xl font-medium text-foreground hover:text-primary"><Link to={link.href}>{link.name}</Link></Button>
                 ))}
               </nav>
             </SheetContent>

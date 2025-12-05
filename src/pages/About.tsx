@@ -83,9 +83,7 @@ const About = () => {
             size="lg"
             asChild
             className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            <Link to="/contact">Get in Touch</Link>
-          </Button>
+          ><Link to="/contact">Get in Touch</Link></Button>
         </div>
       </section>
     </div>
