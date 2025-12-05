@@ -82,12 +82,12 @@ const Index = () => {
       <Separator className="my-8" />
 
       <section className="text-center py-8 bg-secondary text-secondary-foreground rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold mb-4">Ready to Begin Your Journey?</h2>
+        <h2 className="text-3xl font-bold mb-4">Guidance for Your Spiritual Path</h2>
         <p className="text-lg max-w-2xl mx-auto mb-6">
-          Whether you're seeking guidance, healing, or looking to develop your spiritual practice, Linda is here to support you.
+          Linda's purpose is to teach the foundational steps and gently guide you onto the spiritual path that truly suits you. Whether you're seeking clarity, healing, or wish to deepen your practice, she offers practical support and mentorship.
         </p>
         <Button size="lg" variant="outline" className="text-secondary-foreground border-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
-          Contact Linda
+          Connect with Linda
         </Button>
       </section>
     </div>
