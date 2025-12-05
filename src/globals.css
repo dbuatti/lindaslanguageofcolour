@@ -4,42 +4,43 @@
 
 @layer base {
   :root {
-    /* New Modern Colour Scheme (Single Theme) */
-    --background: 200 30% 98%; /* Very light, calming blue-grey */
-    --foreground: 210 40% 20%; /* Deep, rich blue for text */
+    /* New Modern, Elegant Colour Scheme (Single Theme) */
+    --background: 30 10% 97%; /* Warm off-white (#FAF9F6) */
+    --foreground: 210 10% 17%; /* Charcoal (#2C2C2C) for text */
 
     --card: 0 0% 100%; /* Pure White for cards/sections */
-    --card-foreground: 210 40% 20%;
+    --card-foreground: 210 10% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 40% 20%;
+    --popover-foreground: 210 10% 17%;
 
-    --primary: 190 70% 45%; /* Vibrant Teal for primary actions/highlights */
-    --primary-foreground: 0 0% 100%; /* Pure White */
+    --primary: 120 15% 75%; /* Soft sage green (#B4C7B4) */
+    --primary-foreground: 210 10% 17%; /* Charcoal for text on primary */
 
-    --secondary: 210 20% 60%; /* A softer blue for secondary elements */
-    --secondary-foreground: 0 0% 100%; /* White text on secondary */
+    --secondary: 270 15% 85%; /* Muted lavender (#C8B8DB) */
+    --secondary-foreground: 210 10% 17%; /* Charcoal for text on secondary */
 
-    --muted: 200 30% 90%; /* Lighter muted tone */
-    --muted-foreground: 210 40% 40%; /* Darker muted text */
+    --muted: 30 10% 90%; /* Lighter muted tone */
+    --muted-foreground: 210 10% 40%; /* Darker muted text */
 
-    --accent: 10 80% 65%; /* Soft Coral/Peach for strong accents and CTAs */
+    --accent: 38 60% 65%; /* Warm gold/bronze (#D4AF7A) */
     --accent-foreground: 0 0% 100%; /* Pure White */
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 200 30% 85%; /* Light border */
-    --input: 200 30% 85%;
-    --ring: 190 70% 45%; /* Ring color matching primary */
+    --border: 30 10% 85%; /* Soft border */
+    --input: 30 10% 85%;
+    --ring: 120 15% 75%; /* Ring color matching primary (soft sage) */
 
     --radius: 0.5rem;
 
-    /* New Light Blue Shades for Modular Sections */
-    --light-blue-1: 200 30% 95%; /* Slightly darker than background */
-    --light-blue-2: 200 30% 90%;
-    --light-blue-3: 200 30% 85%;
-    --light-blue-4: 200 30% 80%;
+    /* Custom color variables for direct use */
+    --warm-off-white: 30 10% 97%;
+    --charcoal: 210 10% 17%;
+    --soft-sage: 120 15% 75%;
+    --muted-lavender: 270 15% 85%;
+    --warm-gold: 38 60% 65%;
 
     /* Sidebar colors (keeping existing for now, but they will be influenced by the new base colors) */
     --sidebar-background: 240 5.9% 10%;
@@ -51,6 +52,8 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  /* Removed .dark theme block as requested for a single theme */
 }
 
 @layer base {

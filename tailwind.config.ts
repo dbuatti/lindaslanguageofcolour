@@ -62,11 +62,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // New light blue shades
-        'light-blue-1': 'hsl(var(--light-blue-1))',
-        'light-blue-2': 'hsl(var(--light-blue-2))',
-        'light-blue-3': 'hsl(var(--light-blue-3))',
-        'light-blue-4': 'hsl(var(--light-blue-4))',
+        // New custom colors for the theme
+        'warm-off-white': 'hsl(var(--warm-off-white))',
+        'charcoal': 'hsl(var(--charcoal))',
+        'soft-sage': 'hsl(var(--soft-sage))',
+        'muted-lavender': 'hsl(var(--muted-lavender))',
+        'warm-gold': 'hsl(var(--warm-gold))',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -97,6 +98,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
       },
     },
   },
