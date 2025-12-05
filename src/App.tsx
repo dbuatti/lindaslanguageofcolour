@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-// import SiteHeader from "./components/SiteHeader"; // Removed SiteHeader
+import SiteHeader from "./components/SiteHeader"; // Uncommented SiteHeader
 
 const queryClient = new QueryClient();
 
@@ -16,7 +16,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
-          {/* <SiteHeader /> Removed SiteHeader component */}
+          <SiteHeader /> {/* Added SiteHeader component */}
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
