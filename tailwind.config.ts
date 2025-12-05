@@ -91,7 +91,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // Only sans-serif font
+        sans: ['Inter', 'sans-serif'], // Changed to Inter
       },
     },
   },
