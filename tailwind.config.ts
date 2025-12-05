@@ -62,6 +62,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // New light blue shades
+        'light-blue-1': 'hsl(var(--light-blue-1))',
+        'light-blue-2': 'hsl(var(--light-blue-2))',
+        'light-blue-3': 'hsl(var(--light-blue-3))',
+        'light-blue-4': 'hsl(var(--light-blue-4))',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -91,7 +96,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // Changed to Inter
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },

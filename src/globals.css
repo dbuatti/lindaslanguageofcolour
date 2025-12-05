@@ -35,6 +35,12 @@
 
     --radius: 0.5rem;
 
+    /* New Light Blue Shades for Modular Sections */
+    --light-blue-1: 200 30% 95%; /* Slightly darker than background */
+    --light-blue-2: 200 30% 90%;
+    --light-blue-3: 200 30% 85%;
+    --light-blue-4: 200 30% 80%;
+
     /* Sidebar colors (keeping existing for now, but they will be influenced by the new base colors) */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -45,8 +51,6 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  /* Removed .dark theme block as requested for a single theme */
 }
 
 @layer base {
