@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 200 20% 98%; /* Very light, subtle blue background (off-white) */
+    --background: 200 25% 96%; /* A subtle, airy light blue from the header image's clouds */
     --foreground: 218 68% 15%; /* Deep Cosmic Blue for dark text */
 
     --card: 0 0% 100%; /* Pure White for cards */
