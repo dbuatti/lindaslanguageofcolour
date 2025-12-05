@@ -9,7 +9,7 @@ const Index = () => {
       {/* Hero Section */}
       <section
         className="relative flex items-end justify-center text-center bg-no-repeat bg-center
-                   bg-[length:100%_auto] pb-[100%] sm:bg-cover sm:pb-0 sm:h-[80vh]" // Increased pb-[75%] to pb-[100%] for mobile
+                   bg-[length:100%_auto] h-[100vh] sm:bg-cover sm:h-[80vh]" // Changed pb-[100%] to h-[100vh] for mobile
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
         {/* The text block is now absolutely positioned at the bottom of the hero section */}
