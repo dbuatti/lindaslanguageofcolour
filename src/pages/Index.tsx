@@ -34,7 +34,7 @@ const Index = () => {
             */}
             <Button
               size="lg"
-              className="mt-8 px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl" // Adjusted button size and styling
+              className="mt-8 px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
             >
               Explore My Offerings
             </Button>
@@ -120,7 +120,7 @@ const Index = () => {
           </p>
           <Button
             size="lg"
-            className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-charcoal text-warm-off-white hover:bg-charcoal/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-charcoal text-warm-off-white hover:bg-charcoal/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
           >
             Connect with Linda
           </Button>
