@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom'; // Import Link
 
 const Index = () => {
   return (
@@ -24,9 +25,10 @@ const Index = () => {
             {/* Removed site title and description from here as it's now in the header */}
             <Button
               size="lg"
+              asChild // Use asChild to render Link component
               className="mt-8 px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" // Added focus-visible styles
             >
-              Explore My Offerings
+              <Link to="/offerings">Explore My Offerings</Link> {/* Link to offerings page */}
             </Button>
           </div>
         </div>
