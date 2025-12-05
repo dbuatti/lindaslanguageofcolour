@@ -33,10 +33,16 @@ const Contact = () => {
   });
 
   const onSubmit = (data: ContactFormValues) => {
-    // In a real application, you would send this data to a backend API
-    console.log("Form submitted:", data);
-    toast.success("Your message has been sent successfully!");
-    form.reset(); // Reset the form after successful submission
+    const loadingToastId = toast.loading("Sending your message...");
+
+    // Simulate an API call
+    setTimeout(() => {
+      toast.dismiss(loadingToastId);
+      // In a real application, you would send this data to a backend API
+      console.log("Form submitted:", data);
+      toast.success("Your message has been sent successfully!");
+      form.reset(); // Reset the form after successful submission
+    }, 2000); // Simulate a 2-second network delay
   };
 
   return (
