@@ -21,7 +21,7 @@ const Index = () => {
 
         {/* The text block is now positioned relative to the section, with z-index to be above the overlay */}
         <div className="relative z-10 w-full text-white py-12 px-4 md:px-8 bg-gradient-to-t from-charcoal/80 to-transparent"> {/* Added gradient for a softer transition */}
-          <div className="max-w-4xl mx-auto space-y-6"> {/* Increased spacing */}
+          <div className="max-w-4xl mx-auto space-y-6 animate-fade-in-up"> {/* Applied fade-in-up animation */}
             {/* Removed site title and description from here as it's now in the header */}
             <Button
               size="lg"
