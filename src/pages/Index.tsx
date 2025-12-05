@@ -8,33 +8,35 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative h-[80vh] flex items-start justify-center text-center bg-cover bg-center pt-20"
+        className="relative h-[80vh] flex items-end justify-center text-center bg-cover bg-center" // Align content to the bottom
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent"></div> {/* Using foreground for dark overlay */}
-        <div className="relative z-10 text-white px-4 md:px-8 max-w-4xl mx-auto space-y-6">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight drop-shadow-lg">
-            Linda's Language of Colour
-          </h1>
-          <p className="text-xl md:text-2xl font-sans leading-relaxed drop-shadow-md">
-            Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
-          </p>
-          <p className="text-3xl md:text-4xl font-serif leading-snug drop-shadow-md">
-            Practical Protection. Powerful Guidance. Profound Healing.
-          </p>
-          <Button
-            size="lg"
-            className="mt-8 px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            Explore My Offerings
-          </Button>
+        {/* Removed the gradient overlay as the text block will have a solid background */}
+        <div className="relative z-10 w-full bg-foreground text-white py-8 px-4 md:px-8"> {/* Solid background for text block */}
+          <div className="max-w-4xl mx-auto space-y-4"> {/* Inner container for text alignment */}
+            <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight drop-shadow-lg">
+              Linda's Language of Colour
+            </h1>
+            <p className="text-lg md:text-xl font-sans leading-relaxed drop-shadow-md">
+              Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
+            </p>
+            <p className="text-2xl md:text-3xl font-serif leading-snug drop-shadow-md">
+              Practical Protection. Powerful Guidance. Profound Healing.
+            </p>
+            <Button
+              size="lg"
+              className="mt-6 px-8 py-5 text-lg font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Explore My Offerings
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* Introduction: The Guide */}
-      <section className="py-24 bg-background text-foreground"> {/* Using background and foreground */}
-        <div className="container mx-auto flex flex-col md:flex-row items-center gap-16 px-4 md:px-8">
-          <div className="md:w-1/2 space-y-8 text-center md:text-left">
+      {/* Introduction: The Guide (Warm Off-White Background) */}
+      <section className="py-24 bg-warm-off-white text-charcoal"> {/* Generous padding */}
+        <div className="container mx-auto flex flex-col md:flex-row items-center gap-16 px-4 md:px-8"> {/* Increased gap */}
+          <div className="md:w-1/2 space-y-8 text-center md:text-left"> {/* Increased spacing */}
             <h2 className="text-4xl font-serif font-bold leading-tight">Your Practical Guide to Spiritual Well-being</h2>
             <p className="text-xl leading-relaxed">
               At Linda's Language of Colour, <span className="font-bold">I offer grounded spiritual guidance</span>, drawing on deep experience and comfort. My purpose is to <span className="font-bold">"teach those first steps and nudge people onto the path that suits"</span> them.
@@ -53,24 +55,24 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Core Offerings: The Modalities */}
-      <section className="py-24 bg-secondary text-secondary-foreground"> {/* Using secondary for background */}
-        <div className="container mx-auto px-4 md:px-8 text-center space-y-16">
+      {/* Core Offerings: The Modalities (Soft Sage Background) */}
+      <section className="py-24 bg-soft-sage text-charcoal"> {/* Generous padding */}
+        <div className="container mx-auto px-4 md:px-8 text-center space-y-16"> {/* Increased spacing */}
           <h3 className="text-5xl font-serif font-bold leading-tight">My Core Offerings</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-            <div className="space-y-4 p-6 bg-card text-card-foreground rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"> {/* Cards are white with foreground text */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12"> {/* Bento grid style, increased gap */}
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
               <h4 className="text-2xl font-serif font-bold text-primary">Aura-Soma Colour Therapy</h4>
               <p className="text-lg leading-relaxed">Guidance using colour for <span className="font-bold">transformation and self-discovery</span>.</p>
             </div>
-            <div className="space-y-4 p-6 bg-card text-card-foreground rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
               <h4 className="text-2xl font-serif font-bold text-primary">Reiki Healing & Attunements</h4>
               <p className="text-lg leading-relaxed">Healing sessions and <span className="font-bold">Reiki training (Level Two attunements)</span>.</p>
             </div>
-            <div className="space-y-4 p-6 bg-card text-card-foreground rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
               <h4 className="text-2xl font-serif font-bold text-primary">Intuitive Readings & Channelling</h4>
               <p className="text-lg leading-relaxed">Receiving <span className="font-bold">clear, strong guidance</span> through Tarot and remote sessions.</p>
             </div>
-            <div className="space-y-4 p-6 bg-card text-card-foreground rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
               <h4 className="text-2xl font-serif font-bold text-primary">Meditation & Crystal Healing</h4>
               <p className="text-lg leading-relaxed"><span className="font-bold">Foundational practices</span> for spiritual development.</p>
             </div>
@@ -78,9 +80,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Energy Management & Protection */}
-      <section className="py-24 bg-muted-lavender text-foreground"> {/* Using muted-lavender (now a lighter secondary blue) */}
-        <div className="container mx-auto flex flex-col md:flex-row items-center gap-16 px-4 md:px-8">
+      {/* Energy Management & Protection (Muted Lavender Background with Image/Quote) */}
+      <section className="py-24 bg-muted-lavender text-charcoal"> {/* Generous padding */}
+        <div className="container mx-auto flex flex-col md:flex-row items-center gap-16 px-4 md:px-8"> {/* Increased gap */}
           <div className="md:w-1/2 flex justify-center">
             <img
               src="/images/linda.jpeg"
@@ -88,7 +90,7 @@ const Index = () => {
               className="w-full max-w-md h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
-          <div className="md:w-1/2 space-y-8 text-center md:text-left">
+          <div className="md:w-1/2 space-y-8 text-center md:text-left"> {/* Increased spacing */}
             <h3 className="text-4xl font-serif font-bold leading-tight">Energy Management & Protection</h3>
             <p className="text-xl leading-relaxed max-w-xl mx-auto md:mx-0">
               I emphasise that <span className="font-bold">"Protection is something that you have to do everyday if you’re working in spirituality"</span>.
@@ -100,8 +102,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Final Call to Action */}
-      <section className="py-24 bg-primary text-primary-foreground text-center"> {/* Using primary for background */}
+      {/* Final Call to Action (Warm Gold Background) */}
+      <section className="py-24 bg-accent text-accent-foreground text-center"> {/* Generous padding */}
         <div className="container mx-auto px-4 md:px-8 space-y-8">
           <h2 className="text-5xl font-serif font-bold leading-tight">Ready to Begin Your Journey?</h2>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
@@ -109,7 +111,7 @@ const Index = () => {
           </p>
           <Button
             size="lg"
-            className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-charcoal text-warm-off-white hover:bg-charcoal/90 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Connect with Linda
           </Button>
