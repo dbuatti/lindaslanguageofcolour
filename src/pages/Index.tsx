@@ -8,14 +8,27 @@ import { Separator } from "@/components/ui/separator";
 const Index = () => {
   return (
     <div className="container mx-auto p-4 md:p-8 space-y-8">
-      <section className="text-center py-12 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg shadow-lg">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-4">Welcome to Linda's Language of Colour</h1>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-          Discover spiritual guidance, energy management, and empowering teachings with Linda Beckers.
-        </p>
-        <Button size="lg" className="mt-6 bg-primary hover:bg-primary/90 text-primary-foreground">
-          Explore Services
-        </Button>
+      <section
+        className="text-center py-16 md:py-24 rounded-lg shadow-lg bg-cover bg-center relative overflow-hidden"
+        style={{ backgroundImage: "url('/images/background-sky.jpeg')" }}
+      >
+        <div className="absolute inset-0 bg-black opacity-30"></div> {/* Overlay for text readability */}
+        <div className="relative z-10 text-white">
+          <img
+            src="/images/logo-wings.png"
+            alt="Linda's Language of Colour Logo"
+            className="mx-auto mb-6 w-32 h-auto drop-shadow-lg"
+          />
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+            Linda's Language of Colour
+          </h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 drop-shadow-md">
+            Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
+          </p>
+          <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary transition-colors duration-300">
+            Explore Services
+          </Button>
+        </div>
       </section>
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
