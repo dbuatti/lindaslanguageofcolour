@@ -92,7 +92,7 @@ export default {
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
-        serif: ['Oswald', 'serif'], // Using Oswald for a bold, modern heading style
+        serif: ['Playfair Display', 'serif'], // Changed to Playfair Display
       },
     },
   },
