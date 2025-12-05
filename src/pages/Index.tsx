@@ -73,18 +73,7 @@ const Index = () => {
 
       <Separator className="h-1 bg-primary/70" /> {/* Thicker, more prominent separator, now full width */}
 
-      {/* Call to Action (CTA) Footer */}
-      <section className="py-16 bg-secondary text-secondary-foreground"> {/* Removed rounded-lg shadow-xl border ring-* */}
-        <div className="container mx-auto text-center px-4 md:px-8"> {/* Added container mx-auto for internal content */}
-          <h2 className="text-4xl font-bold font-sans mb-6 leading-tight">Ready to Own Your Energy?</h2>
-          <p className="text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
-            Whether you're seeking clarity, healing, or simply wanting to understand how to navigate your spiritual journey with confidence, <span className="font-bold">I offer practical support and genuine mentorship</span>.
-          </p>
-          <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-colors duration-300 px-10 py-6 text-xl font-bold rounded-full shadow-lg hover:shadow-xl">
-            Connect with Linda
-          </Button>
-        </div>
-      </section>
+      {/* Call to Action (CTA) Footer section removed */}
     </div>
   );
 };
