@@ -4,7 +4,50 @@
 
 @layer base {
   :root {
-    /* Modern, Bold Colour Scheme (Single Theme) */
+    /* LIGHT THEME COLORS (now default) */
+    --background: 200 25% 96%; /* A very light, airy blue */
+    --foreground: 210 30% 15%; /* Deep, rich blue for text */
+
+    --card: 0 0% 100%; /* Pure White for cards/sections */
+    --card-foreground: 210 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 15%;
+
+    --primary: 200 70% 55%; /* A vibrant, clear blue for primary actions/highlights */
+    --primary-foreground: 0 0% 100%; /* Pure White */
+
+    --secondary: 210 20% 35%; /* A mid-tone blue for secondary elements */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary */
+
+    --muted: 210 20% 90%; /* Lighter muted tone */
+    --muted-foreground: 210 30% 30%; /* Darker muted text */
+
+    --accent: 320 80% 65%; /* Vibrant Pink / Magenta for strong accents and CTAs */
+    --accent-foreground: 0 0% 100%; /* Pure White */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 80%; /* Light border */
+    --input: 210 20% 80%;
+    --ring: 200 70% 55%; /* Ring color matching primary */
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors (keeping existing for now, but they will be influenced by the new base colors) */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* DARK THEME COLORS (now applied when .dark class is present) */
     --background: 210 30% 15%; /* A deep, rich blue for main backgrounds */
     --foreground: 0 0% 100%; /* Pure White for text on dark backgrounds */
 
@@ -35,7 +78,6 @@
 
     --radius: 0.5rem;
 
-    /* Sidebar colors (keeping existing for now, but they will be influenced by the new base colors) */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -45,8 +87,6 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  /* Removed .dark theme block as requested for a single theme */
 }
 
 @layer base {
