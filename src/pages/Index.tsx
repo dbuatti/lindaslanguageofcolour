@@ -9,30 +9,30 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative text-center min-h-[70vh] flex flex-col items-center justify-center overflow-hidden" // Changed to flex-col to stack items
+        className="relative text-center min-h-[60vh] md:min-h-[70vh] flex flex-col items-center justify-center overflow-hidden" // Adjusted min-height for mobile and desktop
       >
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-background.png')" }} // Corrected to .png
+          style={{ backgroundImage: "url('/images/hero-background.png')" }}
         >
           {/* No dark overlay div */}
         </div>
 
         {/* Content container for logo and button */}
-        <div className="relative z-10 flex flex-col items-center justify-center space-y-6 py-12 px-4 md:px-8">
+        <div className="relative z-10 flex flex-col items-center justify-center space-y-6 py-8 px-4 md:px-8"> {/* Adjusted vertical padding */}
           {/* Linda with Wings Logo - positioned over the background */}
           <img
-            src="/images/linda-with-wings-logo.png" // New image path for the hero logo
+            src="/images/linda-with-wings-logo.png"
             alt="Linda with Wings Logo"
-            className="h-[400px] md:h-[550px] lg:h-[700px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased size further
+            className="h-[500px] md:h-[550px] lg:h-[700px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased mobile height
           />
 
           {/* The button is positioned below the new logo */}
           <Button
             size="lg"
             asChild // Use asChild to render Link component
-            className="px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 animate-fade-in-up delay-300" // Added focus-visible styles
+            className="px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 animate-fade-in-up delay-300"
           ><Link to="/offerings">Explore My Offerings</Link></Button>
         </div>
       </section>
