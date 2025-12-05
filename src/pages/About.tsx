@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="w-full font-sans">
       {/* Hero Section for About Page */}
-      <section className="relative py-24 bg-gradient-to-br from-warm-off-white to-soft-sage text-charcoal text-center">
+      <section className="relative py-24 bg-gradient-to-br from-background to-secondary text-foreground text-center">
         <div className="container mx-auto px-4 md:px-8 space-y-6">
           <h1 className="text-6xl font-serif font-bold leading-tight">Meet Linda Beckers</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
@@ -18,7 +18,7 @@ const About = () => {
       </section>
 
       {/* Linda's Journey Section */}
-      <section className="py-24 bg-white text-charcoal">
+      <section className="py-24 bg-card text-foreground">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-16 px-4 md:px-8">
           <div className="md:w-1/2 flex justify-center">
             <img
@@ -40,29 +40,29 @@ const About = () => {
       </section>
 
       {/* Expertise and Passion Section */}
-      <section className="py-24 bg-muted-lavender text-charcoal">
+      <section className="py-24 bg-muted text-foreground">
         <div className="container mx-auto px-4 md:px-8 text-center space-y-12">
           <h2 className="text-4xl font-serif font-bold leading-tight text-primary">My Expertise & Passion</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-4 p-8 bg-white rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="space-y-4 p-8 bg-card rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-2xl font-serif font-bold text-foreground">Aura-Soma & Colour Therapy</h3>
               <p className="text-lg leading-relaxed">
                 As a certified Aura-Soma practitioner, I use the vibrant language of colour to help you unlock deeper self-understanding and facilitate profound energetic shifts.
               </p>
             </div>
-            <div className="space-y-4 p-8 bg-white rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="space-y-4 p-8 bg-card rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-2xl font-serif font-bold text-foreground">Reiki & Energy Healing</h3>
               <p className="text-lg leading-relaxed">
                 I offer powerful Reiki healing sessions and attunements, guiding you to harness universal life force energy for balance and restoration.
               </p>
             </div>
-            <div className="space-y-4 p-8 bg-white rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="space-y-4 p-8 bg-card rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-2xl font-serif font-bold text-foreground">Intuitive Guidance</h3>
               <p className="text-lg leading-relaxed">
                 Through intuitive readings and channelling, I provide clear, strong messages to illuminate your path and offer insights into your questions.
               </p>
             </div>
-            <div className="space-y-4 p-8 bg-white rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="space-y-4 p-8 bg-card rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-2xl font-serif font-bold text-foreground">Spiritual Mentorship</h3>
               <p className="text-lg leading-relaxed">
                 I offer personalized mentorship to help you develop your own spiritual gifts, manage your energy, and live a more aligned life.
@@ -82,7 +82,7 @@ const About = () => {
           <Button
             size="lg"
             asChild
-            className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-charcoal text-warm-off-white hover:bg-charcoal/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="mt-8 px-12 py-7 text-2xl font-bold rounded-lg bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <Link to="/contact">Get in Touch</Link>
           </Button>

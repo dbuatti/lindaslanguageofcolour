@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <div className="w-full font-sans py-16 px-4 md:px-8">
       {/* Hero Section for Contact Page */}
-      <section className="relative py-24 bg-gradient-to-br from-warm-off-white to-soft-sage text-charcoal text-center mb-16 rounded-lg shadow-lg">
+      <section className="relative py-24 bg-gradient-to-br from-background to-secondary text-foreground text-center mb-16 rounded-lg shadow-lg">
         <div className="container mx-auto space-y-6">
           <h1 className="text-6xl font-serif font-bold leading-tight">Get in Touch</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
@@ -53,7 +53,7 @@ const Contact = () => {
 
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         {/* Contact Form Section */}
-        <div className="bg-white p-8 rounded-lg shadow-xl">
+        <div className="bg-card p-8 rounded-lg shadow-xl">
           <h2 className="text-4xl font-serif font-bold text-foreground mb-8 text-center lg:text-left">Send a Message</h2>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <div>
@@ -120,7 +120,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Information Section */}
-        <div className="bg-white p-8 rounded-lg shadow-xl flex flex-col justify-between">
+        <div className="bg-card p-8 rounded-lg shadow-xl flex flex-col justify-between">
           <h2 className="text-4xl font-serif font-bold text-foreground mb-8 text-center lg:text-left">Contact Details</h2>
           <div className="space-y-8 text-lg text-muted-foreground">
             <div className="flex items-center space-x-4">

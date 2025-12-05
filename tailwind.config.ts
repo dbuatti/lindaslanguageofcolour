@@ -62,12 +62,6 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // New custom colors for the theme
-        'warm-off-white': 'hsl(var(--warm-off-white))',
-        'charcoal': 'hsl(var(--charcoal))',
-        'soft-sage': 'hsl(var(--soft-sage))',
-        'muted-lavender': 'hsl(var(--muted-lavender))',
-        'warm-gold': 'hsl(var(--warm-gold))',
       },
       borderRadius: {
         lg: "var(--radius)",

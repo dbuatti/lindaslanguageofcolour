@@ -35,13 +35,6 @@
 
     --radius: 0.5rem;
 
-    /* Custom color variables for direct use (updated to new palette) */
-    --warm-off-white: 210 20% 97%; /* Now maps to background */
-    --charcoal: 210 40% 15%; /* Now maps to foreground */
-    --soft-sage: 210 30% 70%; /* Now maps to secondary */
-    --muted-lavender: 210 30% 80%; /* A slightly lighter secondary */
-    --warm-gold: 240 50% 85%; /* Now maps to accent */
-
     /* Sidebar colors (keeping existing for now, but they will be influenced by the new base colors) */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
