@@ -58,7 +58,7 @@ const Index = () => {
             <img
               src="/images/linda.jpeg"
               alt="Linda Beckers"
-              className="w-full max-w-md h-auto object-cover rounded-full shadow-lg"
+              className="w-full max-w-md h-auto object-cover rounded-2xl shadow-lg" // Changed to rounded-2xl
             />
           </div>
         </div>
@@ -69,19 +69,19 @@ const Index = () => {
         <div className="container mx-auto px-4 md:px-8 text-center space-y-16"> {/* Increased spacing */}
           <h3 className="text-5xl font-serif font-bold leading-tight">My Core Offerings</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12"> {/* Bento grid style, increased gap */}
-            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"> {/* Added hover:scale-105 */}
               <h4 className="text-2xl font-serif font-bold text-primary">Aura-Soma Colour Therapy</h4>
               <p className="text-lg leading-relaxed">Guidance using colour for <span className="font-bold">transformation and self-discovery</span>.</p>
             </div>
-            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"> {/* Added hover:scale-105 */}
               <h4 className="text-2xl font-serif font-bold text-primary">Reiki Healing & Attunements</h4>
               <p className="text-lg leading-relaxed">Healing sessions and <span className="font-bold">Reiki training (Level Two attunements)</span>.</p>
             </div>
-            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"> {/* Added hover:scale-105 */}
               <h4 className="text-2xl font-serif font-bold text-primary">Intuitive Readings & Channelling</h4>
               <p className="text-lg leading-relaxed">Receiving <span className="font-bold">clear, strong guidance</span> through Tarot and remote sessions.</p>
             </div>
-            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-4 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"> {/* Added hover:scale-105 */}
               <h4 className="text-2xl font-serif font-bold text-primary">Meditation & Crystal Healing</h4>
               <p className="text-lg leading-relaxed"><span className="font-bold">Foundational practices</span> for spiritual development.</p>
             </div>
@@ -96,7 +96,7 @@ const Index = () => {
             <img
               src="/images/linda.jpeg"
               alt="Hands holding a seedling"
-              className="w-full max-w-md h-auto object-cover rounded-lg shadow-lg"
+              className="w-full max-w-md h-auto object-cover rounded-2xl shadow-lg" // Changed to rounded-2xl
             />
           </div>
           <div className="md:w-1/2 space-y-8 text-center md:text-left"> {/* Increased spacing */}
