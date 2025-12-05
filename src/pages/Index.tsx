@@ -27,7 +27,7 @@ const Index = () => {
         />
 
         {/* The text block (now just the button) is positioned below the new logo */}
-        <div className="relative z-10 w-full text-white py-12 px-4 md:px-8 bg-gradient-to-t from-foreground/80 to-transparent"> {/* Added gradient for a softer transition */}
+        <div className="relative z-10 w-full text-white py-12 px-4 md:px-8"> {/* Removed bg-gradient-to-t from-foreground/80 to-transparent */}
           <div className="max-w-4xl mx-auto space-y-6 animate-fade-in-up"> {/* Applied fade-in-up animation */}
             <Button
               size="lg"
