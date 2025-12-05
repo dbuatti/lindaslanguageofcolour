@@ -8,25 +8,31 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative text-center bg-no-repeat bg-top bg-contain // bg-top for mobile, bg-contain for mobile
-                   min-h-[60vh] sm:h-[calc(100vw_/_4)] sm:bg-cover sm:bg-[center_150%]" // Increased height for both mobile (min-h) and desktop (sm:h)
-        style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
+        className="relative text-center min-h-[70vh] flex items-end justify-center overflow-hidden" // Adjusted min-h and added flex properties
       >
-        {/* The text block is now absolutely positioned at the bottom of the hero section */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 w-full bg-foreground text-white py-8 px-4 md:px-8">
-          <div className="max-w-4xl mx-auto space-y-4">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight drop-shadow-lg">
+        {/* Background Image with Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center" // Simplified background styling
+          style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
+        >
+          <div className="absolute inset-0 bg-charcoal opacity-40"></div> {/* Dark overlay for text readability */}
+        </div>
+
+        {/* The text block is now positioned relative to the section, with z-index to be above the overlay */}
+        <div className="relative z-10 w-full text-white py-12 px-4 md:px-8 bg-gradient-to-t from-charcoal/80 to-transparent"> {/* Added gradient for a softer transition */}
+          <div className="max-w-4xl mx-auto space-y-6"> {/* Increased spacing */}
+            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight drop-shadow-lg">
               Linda's Language of Colour
             </h1>
-            <p className="text-lg md:text-xl font-sans leading-relaxed drop-shadow-md">
+            <p className="text-xl md:text-2xl font-sans leading-relaxed drop-shadow-md">
               Aura-Soma Colour Therapy, Meditation, Crystal Healing, Spiritual Development
             </p>
-            <p className="text-2xl md:text-3xl font-serif leading-snug drop-shadow-md">
+            <p className="text-3xl md:text-4xl font-serif leading-snug drop-shadow-md">
               Practical Protection. Powerful Guidance. Profound Healing.
             </p>
             <Button
               size="lg"
-              className="mt-6 px-8 py-5 text-lg font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="mt-8 px-10 py-6 text-xl font-bold rounded-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl" // Adjusted button size and styling
             >
               Explore My Offerings
             </Button>
