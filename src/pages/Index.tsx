@@ -9,7 +9,7 @@ const Index = () => {
       {/* Hero Section */}
       <section
         className="relative flex items-end justify-center text-center bg-no-repeat bg-cover // bg-cover for mobile
-                   min-h-[80vh] sm:h-[80vh] sm:bg-cover sm:bg-center // min-h to keep area size, sm:bg-cover sm:h sm:bg-center for desktop
+                   min-h-[70vh] sm:h-[80vh] sm:bg-cover sm:bg-center // min-h to keep area size, sm:bg-cover sm:h sm:bg-center for desktop
                    bg-top" // Changed to bg-top for mobile to ensure top of image is visible
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
