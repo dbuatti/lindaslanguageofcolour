@@ -10,7 +10,7 @@ const Index = () => {
       <section className="py-12 bg-card text-card-foreground">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 px-4 md:px-8">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
-            <h2 className="text-4xl font-bold font-sans text-foreground leading-tight">Your Practical Guide to Spiritual Well-being</h2>
+            <h2 className="text-4xl font-bold font-sans text-foreground leading-tight">Linda's Language of Colour</h2>
             <p className="text-lg leading-relaxed">
               At Linda's Language of Colour, <span className="font-bold">I offer grounded spiritual guidance</span>, drawing on deep experience and comfort. My purpose is to <span className="font-bold">"teach those first steps and nudge people onto the path that suits"</span> them.
             </p>
