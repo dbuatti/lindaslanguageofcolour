@@ -8,10 +8,10 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative h-[80vh] flex items-center justify-center text-center bg-cover bg-center"
+        className="relative h-[80vh] flex items-start justify-center text-center bg-cover bg-center pt-20" // Changed items-center to items-start and added pt-20
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent"></div> {/* Darker overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent"></div> {/* Darker overlay (from /60 to /80) */}
         <div className="relative z-10 text-white px-4 md:px-8 max-w-4xl mx-auto space-y-6">
           <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight drop-shadow-lg">
             Linda's Language of Colour
@@ -44,11 +44,12 @@ const Index = () => {
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center">
+            {/* Circular image mask */}
             <img
               src="/images/linda.jpeg"
               alt="Linda Beckers"
               className="w-full max-w-md h-auto object-cover rounded-full shadow-lg"
-            /> {/* Circular image mask */}
+            />
           </div>
         </div>
       </section>
