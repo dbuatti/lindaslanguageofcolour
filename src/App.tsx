@@ -6,7 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import SiteHeader from "./components/SiteHeader";
-import SiteFooter from "./components/SiteFooter"; // Import SiteFooter
+import SiteFooter from "./components/SiteFooter";
+import Offerings from "./pages/Offerings"; // Import Offerings page
+import About from "./pages/About"; // Import About page
+import Contact from "./pages/Contact"; // Import Contact page
 
 const queryClient = new QueryClient();
 
@@ -21,11 +24,14 @@ const App = () => (
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/offerings" element={<Offerings />} /> {/* New route */}
+              <Route path="/about" element={<About />} /> {/* New route */}
+              <Route path="/contact" element={<Contact />} /> {/* New route */}
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
-          <SiteFooter /> {/* Added SiteFooter component */}
+          <SiteFooter />
         </div>
       </BrowserRouter>
     </TooltipProvider>
