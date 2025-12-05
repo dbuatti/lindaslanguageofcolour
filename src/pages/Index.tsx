@@ -12,10 +12,10 @@ const Index = () => {
         <div className="md:w-1/2 space-y-6 text-center md:text-left"> {/* Increased internal spacing */}
           <h2 className="text-4xl font-bold font-serif text-foreground leading-tight">Your Practical Guide to Spiritual Well-being</h2> {/* Adjusted line height */}
           <p className="text-lg leading-relaxed"> {/* Adjusted line height */}
-            At Linda's Language of Colour, Linda Beckers offers grounded spiritual guidance, drawing on deep experience and comfort. Her purpose is to **"teach those first steps and nudge people onto the path that suits"** them.
+            At Linda's Language of Colour, **I offer** grounded spiritual guidance, drawing on deep experience and comfort. **My purpose** is to **"teach those first steps and nudge people onto the path that suits"** them.
           </p>
           <p className="text-lg leading-relaxed">
-            Linda, a respected **"powerful master and channeler"**, provides the tools and advice needed to empower individuals and help them find their footing.
+            As a respected **"powerful master and channeler"**, **I provide** the tools and advice needed to empower individuals and help them find their footing.
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center px-4">
@@ -56,7 +56,7 @@ const Index = () => {
         <div>
           <h3 className="text-3xl font-semibold font-serif text-primary mb-8 text-center leading-tight">Energy Management & Protection</h3> {/* Larger heading, increased margin */}
           <div className="space-y-6"> {/* Increased internal spacing */}
-            <p className="text-lg leading-relaxed">Linda emphasises that **"Protection is something that you have to do everyday if you’re working in spirituality"**.</p>
+            <p className="text-lg leading-relaxed">**I emphasise** that **"Protection is something that you have to do everyday if you’re working in spirituality"**.</p>
             <ul className="list-disc list-inside space-y-3 pl-4 text-lg leading-relaxed"> {/* Increased list item spacing */}
               <li>**Essential Daily Protection:** Learn practical techniques for clearing and protecting yourself and your space.</li>
               <li>**Grounded Boundaries:** Advice on **standing firm in your boundaries** while approaching situations with compassion.</li>
@@ -73,7 +73,7 @@ const Index = () => {
       <section className="text-center py-16 bg-secondary text-secondary-foreground rounded-lg shadow-xl border border-transparent ring-4 ring-accent ring-offset-4 ring-offset-background transition-all duration-300 hover:ring-8"> {/* Increased padding, shadow, ring thickness, and hover effect */}
         <h2 className="text-4xl font-bold font-serif mb-6 leading-tight">Ready to Own Your Energy?</h2> {/* Larger heading, increased margin */}
         <p className="text-xl max-w-3xl mx-auto mb-8 leading-relaxed"> {/* Larger text, increased margin */}
-          Whether you're seeking clarity, healing, or simply wanting to understand how to navigate your spiritual journey with confidence, Linda offers practical support and genuine mentorship.
+          Whether you're seeking clarity, healing, or simply wanting to understand how to navigate your spiritual journey with confidence, **I offer** practical support and genuine mentorship.
         </p>
         <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-colors duration-300 px-10 py-6 text-xl font-bold rounded-full shadow-lg hover:shadow-xl"> {/* Larger button, rounded, bold text, shadow */}
           Connect with Linda
