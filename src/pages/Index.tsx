@@ -9,7 +9,7 @@ const Index = () => {
       {/* Hero Section */}
       <section
         className="relative text-center bg-no-repeat bg-top bg-contain // bg-top for mobile, bg-contain for mobile
-                   min-h-[50vh] sm:h-[80vh] sm:bg-cover sm:bg-center" // Using min-h-[50vh] for mobile, sm:bg-cover sm:h sm:bg-center for desktop
+                   min-h-[50vh] sm:h-[80vh] sm:bg-cover sm:bg-top" // Changed sm:bg-center to sm:bg-top for desktop
         style={{ backgroundImage: "url('/images/header-banner.jpeg')" }}
       >
         {/* The text block is now absolutely positioned at the bottom of the hero section */}
