@@ -13,12 +13,12 @@ const Index = () => {
 
       <section className="flex flex-col md:flex-row items-center gap-8 py-12">
         <div className="md:w-1/2 space-y-4 text-center md:text-left">
-          <h2 className="text-4xl font-bold text-gray-900">My Approach to Spiritual Well-being</h2>
+          <h2 className="text-4xl font-bold text-gray-900">Your Practical Guide to Spiritual Well-being</h2>
           <p className="text-lg text-gray-700">
-            Linda Beckers operates under the name "Linda's Language of Colour," focusing on spiritual guidance, energy management, and teaching beginners. Her practice is centered around various healing and spiritual development techniques.
+            At Linda's Language of Colour, Linda Beckers offers grounded spiritual guidance, practical energy management, and clear teachings for those beginning or deepening their journey. Her practice weaves together various healing and spiritual development techniques, always with a focus on real-world application.
           </p>
           <p className="text-lg text-gray-700">
-            With extensive experience, Linda is dedicated to guiding aspiring practitioners and individuals on their spiritual journey. Her purpose is to "teach those first steps and nudge people onto the path that suits" them, offering practical advice and mentorship.
+            With a wealth of experience, Linda is dedicated to empowering individuals. As she puts it, her purpose is to "teach those first steps and nudge people onto the path that suits" them, providing honest advice and mentorship to help you find your footing.
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center">
@@ -82,9 +82,9 @@ const Index = () => {
       <Separator className="my-8" />
 
       <section className="text-center py-8 bg-secondary text-secondary-foreground rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold mb-4">Guidance for Your Spiritual Path</h2>
+        <h2 className="text-3xl font-bold mb-4">Curious About Your Path?</h2>
         <p className="text-lg max-w-2xl mx-auto mb-6">
-          Linda's purpose is to teach the foundational steps and gently guide you onto the spiritual path that truly suits you. Whether you're seeking clarity, healing, or wish to deepen your practice, she offers practical support and mentorship.
+          If you're seeking clarity, healing, or simply want to understand how to navigate your spiritual journey with confidence, Linda offers practical support and genuine mentorship. It's about finding what truly resonates with *you*.
         </p>
         <Button size="lg" variant="outline" className="text-secondary-foreground border-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
           Connect with Linda
