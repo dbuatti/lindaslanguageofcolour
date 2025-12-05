@@ -9,20 +9,26 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative text-center min-h-[70vh] flex items-end justify-center overflow-hidden" // Adjusted min-h and added flex properties
+        className="relative text-center min-h-[70vh] flex flex-col items-center justify-center overflow-hidden" // Changed to flex-col to stack items
       >
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center" // Simplified background styling
-          style={{ backgroundImage: "url('/images/hero-background.jpg')" }} // Updated to new background image
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/hero-background.jpg')" }}
         >
-          {/* Removed the dark overlay div */}
+          {/* No dark overlay div */}
         </div>
 
-        {/* The text block is now positioned relative to the section, with z-index to be above the overlay */}
+        {/* Linda with Wings Logo - positioned over the background */}
+        <img
+          src="/images/linda-with-wings-logo.png" // New image path for the hero logo
+          alt="Linda with Wings Logo"
+          className="relative z-10 h-48 md:h-64 lg:h-80 w-auto object-contain mb-8 animate-fade-in-up drop-shadow-lg" // Adjust size, add margin, and shadow
+        />
+
+        {/* The text block (now just the button) is positioned below the new logo */}
         <div className="relative z-10 w-full text-white py-12 px-4 md:px-8 bg-gradient-to-t from-foreground/80 to-transparent"> {/* Added gradient for a softer transition */}
           <div className="max-w-4xl mx-auto space-y-6 animate-fade-in-up"> {/* Applied fade-in-up animation */}
-            {/* Removed site title and description from here as it's now in the header */}
             <Button
               size="lg"
               asChild // Use asChild to render Link component
