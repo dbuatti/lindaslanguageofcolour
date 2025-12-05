@@ -5,8 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import SiteHeader from "./components/SiteHeader"; // Changed from Header
-import Footer from "./components/Footer";
+import SiteHeader from "./components/SiteHeader";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +16,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
-          <SiteHeader /> {/* Replaced Header with SiteHeader */}
+          <SiteHeader />
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
@@ -25,7 +24,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
-          <Footer />
+          {/* <Footer /> Removed Footer component */}
         </div>
       </BrowserRouter>
     </TooltipProvider>
