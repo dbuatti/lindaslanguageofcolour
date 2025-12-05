@@ -9,7 +9,7 @@ const Index = () => {
     <div className="w-full font-sans">
       {/* Hero Section */}
       <section
-        className="relative text-center min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-center overflow-hidden" // Adjusted min-height to accommodate larger logo
+        className="relative text-center min-h-[85vh] md:min-h-[90vh] flex flex-col items-center justify-center overflow-hidden" // Increased min-height to give more room for the logo
       >
         {/* Background Image */}
         <div
@@ -25,7 +25,7 @@ const Index = () => {
           <img
             src="/images/linda-with-wings-logo.png"
             alt="Linda with Wings Logo"
-            className="h-[700px] md:h-[800px] lg:h-[900px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Increased logo height significantly
+            className="h-[800px] md:h-[900px] lg:h-[1000px] w-auto object-contain animate-fade-in-up drop-shadow-lg" // Significantly increased logo height
           />
 
           {/* The button is positioned below the new logo */}
